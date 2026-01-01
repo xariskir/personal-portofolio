@@ -1,0 +1,210 @@
+:root {
+  --bg-main: #0e0e0e;
+  --bg-panel: #161616;
+  --text-main: #eaeaea;
+  --text-muted: #a0a0a0;
+  --accent: #00ff9c;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  color: var(--text-main);
+  background: var(--bg-main);
+  overflow-x: hidden;
+}
+
+/* BASE BACKGROUND */
+.bg-layer {
+  position: fixed;
+  inset: 0;
+  background:
+    linear-gradient(120deg, rgba(255,255,255,0.03) 0%, transparent 40%),
+    linear-gradient(300deg, rgba(255,255,255,0.02) 0%, transparent 50%);
+  z-index: -3;
+}
+
+.bg-overlay {
+  position: fixed;
+  inset: 0;
+  background:
+    repeating-linear-gradient(
+      90deg,
+      rgba(255,255,255,0.02) 0,
+      rgba(255,255,255,0.02) 1px,
+      transparent 1px,
+      transparent 80px
+    );
+  opacity: 0.25;
+  z-index: -2;
+}
+
+
+/* =========================
+   HERO SECTION
+   ========================= */
+
+.hero {
+    max-width: 900px;
+    margin: 120px auto 0;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.hero-eyebrow {
+    display: inline-block;
+    margin-bottom: 14px;
+    font-size: 0.9rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.hero h1 {
+    font-size: clamp(2.8rem, 5vw, 4rem);
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.hero h1 span {
+    color: #7dd3fc; /* subtle accent */
+}
+
+.hero h2 {
+    font-size: 1.4rem;
+    font-weight: 400;
+    margin-bottom: 24px;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.hero-description {
+    max-width: 680px;
+    margin: 0 auto 36px;
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Buttons */
+.hero-actions {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    padding: 12px 26px;
+    border-radius: 999px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.25s ease;
+}
+
+.btn-primary {
+    background: #7dd3fc;
+    color: #020617;
+}
+
+.btn-primary:hover {
+    background: #38bdf8;
+    transform: translateY(-2px);
+}
+
+.btn-secondary {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: #fff;
+}
+
+.btn-secondary:hover {
+    background: rgba(255, 255, 255, 0.08);
+    transform: translateY(-2px);
+}
+/* =========================
+   HERO SECTION
+   ========================= */
+
+.hero {
+    max-width: 900px;
+    margin: 120px auto 0;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.hero-eyebrow {
+    display: inline-block;
+    margin-bottom: 14px;
+    font-size: 0.9rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.hero h1 {
+    font-size: clamp(2.8rem, 5vw, 4rem);
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.hero h1 span {
+    color: #7dd3fc; /* subtle accent */
+}
+
+.hero h2 {
+    font-size: 1.4rem;
+    font-weight: 400;
+    margin-bottom: 24px;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.hero-description {
+    max-width: 680px;
+    margin: 0 auto 36px;
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Buttons */
+.hero-actions {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    padding: 12px 26px;
+    border-radius: 999px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.25s ease;
+}
+
+.btn-primary {
+    background: #7dd3fc;
+    color: #020617;
+}
+
+.btn-primary:hover {
+    background: #38bdf8;
+    transform: translateY(-2px);
+}
+
+.btn-secondary {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: #fff;
+}
+
+.btn-secondary:hover {
+    background: rgba(255, 255, 255, 0.08);
+    transform: translateY(-2px);
+}
+
+
