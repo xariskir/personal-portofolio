@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+
+{% block title %}{{ project.title }} | Charis Kyritsis{% endblock %}
+
+{% block content %}
+<section class="project-detail">
+
+    <span class="project-badge">{{ project.status }}</span>
+
+    <h1 class="project-title">{{ project.title }}</h1>
+    <p class="project-summary">{{ project.summary }}</p>
+
+    <div class="project-meta">
+        <span class="project-category">{{ project.category }}</span>
+        <div class="project-stack">
+            {% for tech in project.stack %}
+            <span>{{ tech }}</span>
+            {% endfor %}
+        </div>
+    </div>
+
+    <div class="project-section">
+        <h2>Problem</h2>
+        <p>{{ project.problem }}</p>
+    </div>
+
+    <div class="project-section">
+        <h2>Solution</h2>
+        <p>{{ project.solution }}</p>
+    </div>
+
+    <div class="project-section">
+        <h2>Key Highlights</h2>
+        <ul>
+            {% for item in project.highlights %}
+            <li>{{ item }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+
+    <div class="project-section">
+        <h2>Impact</h2>
+        <ul>
+            {% for item in project.impact %}
+            <li>{{ item }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+
+    <div class="project-actions">
+        <a href="{{ project.github }}" target="_blank" class="btn btn-primary">
+            View on GitHub
+        </a>
+        <a href="/projects" class="btn btn-secondary">
+            Back to Projects
+        </a>
+    </div>
+
+</section>
+{% endblock %}

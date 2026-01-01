@@ -469,3 +469,88 @@ body {
     fill: currentColor;
 }
 
+/* =========================
+   PROJECT DETAIL
+   ========================= */
+
+.project-detail {
+    max-width: 900px;
+    margin: 100px auto;
+    padding: 0 20px;
+}
+
+.project-badge {
+    display: inline-block;
+    margin-bottom: 18px;
+    padding: 6px 14px;
+    font-size: 0.75rem;
+    border-radius: 999px;
+    background: rgba(0, 255, 156, 0.15);
+    color: var(--accent);
+}
+
+.project-title {
+    font-size: 2.2rem;
+    margin-bottom: 16px;
+}
+
+.project-summary {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.85);
+    margin-bottom: 28px;
+}
+
+.project-meta {
+    margin-bottom: 50px;
+}
+
+.project-category {
+    display: block;
+    margin-bottom: 12px;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.project-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.project-stack span {
+    font-size: 0.75rem;
+    padding: 6px 12px;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.project-section {
+    margin-bottom: 40px;
+}
+
+.project-section h2 {
+    margin-bottom: 14px;
+    font-size: 1.3rem;
+    color: var(--accent);
+}
+
+.project-section p,
+.project-section li {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.project-section ul {
+    padding-left: 18px;
+}
+
+.project-actions {
+    display: flex;
+    gap: 18px;
+    flex-wrap: wrap;
+    margin-top: 60px;
+}

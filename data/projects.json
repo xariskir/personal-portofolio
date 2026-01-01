@@ -24,3 +24,27 @@
     ]
   }
 ]
+[
+  {
+    "id": "ai-invoice-fraud",
+    "title": "AI-Powered Invoice Fraud Detector",
+    "category": "Machine Learning",
+    "stack": ["Python", "Pandas", "Scikit-learn", "Flask"],
+    "summary": "Machine learning system that detects suspicious invoice patterns for accounting firms.",
+    "problem": "Accounting firms handle large volumes of invoices, making manual fraud detection slow, error-prone, and costly.",
+    "solution": "Designed a supervised machine learning pipeline that analyzes invoice features and flags potentially fraudulent cases with explainable outputs.",
+    "highlights": [
+      "Feature engineering on financial data",
+      "Binary classification models",
+      "Explainable predictions for auditors"
+    ],
+    "impact": [
+      "Reduced manual review workload",
+      "Faster identification of suspicious invoices",
+      "Improved decision support for accountants"
+    ],
+    "github": "https://github.com/xariskir",
+    "status": "Flagship Project"
+  }
+]
+
