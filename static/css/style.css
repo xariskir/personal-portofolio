@@ -350,3 +350,34 @@ body {
 }
 
 
+/* =========================
+   ABOUT SECTION
+   ========================= */
+
+.about {
+    max-width: 850px;
+    margin: 100px auto;
+    padding: 0 20px;
+}
+
+.about-content p {
+    margin-bottom: 22px;
+    font-size: 1rem;
+    line-height: 1.75;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.about-lead {
+    font-size: 1.15rem;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.95);
+}
+
+.about-cta {
+    margin-top: 40px;
+    font-size: 1.05rem;
+    font-weight: 500;
+    color: var(--accent);
+}
+
+
