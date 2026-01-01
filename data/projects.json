@@ -1,29 +1,4 @@
-[
-  {
-    "id": "ai-invoice-fraud",
-    "title": "AI-Powered Invoice Fraud Detector",
-    "category": "Machine Learning",
-    "stack": ["Python", "Scikit-learn", "Pandas", "Flask"],
-    "description": "A machine learning system that detects suspicious invoice patterns for accounting firms.",
-    "highlights": [
-      "Feature engineering on financial data",
-      "Supervised ML classification",
-      "Explainable outputs for auditors"
-    ]
-  },
-  {
-    "id": "basketball-analytics",
-    "title": "Basketball Performance Analytics Platform",
-    "category": "Data Analytics",
-    "stack": ["Python", "R", "YOLO", "Data Visualization"],
-    "description": "Advanced player and lineup analytics using play-by-play data and computer vision.",
-    "highlights": [
-      "Player & lineup efficiency metrics",
-      "Shot profile analysis",
-      "Automated PDF reports"
-    ]
-  }
-]
+
 [
   {
     "id": "ai-invoice-fraud",
