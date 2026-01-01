@@ -30,13 +30,14 @@ def skills():
     return render_template("skills.html")
 
 @app.route("/education")
-def education():
+def education_page():
     data = load_education()
     return render_template(
         "education.html",
         education=data["education"],
         training=data["training"]
     )
+
 
 
 @app.route("/projects")
