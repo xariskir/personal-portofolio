@@ -1,30 +1,59 @@
 {
   "education": [
     {
-      "degree": "BSc in Computer Science",
-      "institution": "Hellenic Open University",
-      "field": "Data Science & Artificial Intelligence",
-      "years": "2022 – Present",
-      "description": "Focus on data analysis, machine learning, algorithms and applied AI systems."
+      "title": "BSc in Computer Science",
+      "institution": "Hellenic Open University (Ελληνικό Ανοικτό Πανεπιστήμιο)",
+      "period": "2023 – Present",
+      "focus": [
+        "Statistics & Probability",
+        "Data Structures, Algorithms & Databases",
+        "Machine Learning & Data Mining",
+        "Big Data Analytics",
+        "Foundations of Data Science"
+      ],
+      "description": "Strong academic foundation in computer science with emphasis on data analysis, machine learning, mathematical modeling, and large-scale data processing."
     }
   ],
-
   "training": [
     {
-      "title": "Machine Learning & Data Analysis with Python",
-      "provider": "Online Platform / Institute",
-      "year": "2024"
+      "title": "Microsoft Certified: Azure AI Fundamentals",
+      "provider": "Microsoft",
+      "focus": [
+        "Azure Machine Learning",
+        "Azure Cognitive Services",
+        "Azure Bot Services",
+        "AI Workloads on Azure"
+      ]
     },
     {
-      "title": "Advanced Data Analytics & Automation",
-      "provider": "Online Platform / Institute",
-      "year": "2023"
+      "title": "Career Essentials in Generative AI",
+      "provider": "Microsoft & LinkedIn",
+      "focus": [
+        "Generative AI Concepts",
+        "Prompt Engineering",
+        "AI Ethics & Responsible AI",
+        "Applied Generative AI"
+      ]
     },
     {
-      "title": "Python Programming for Data Science",
-      "provider": "Online Platform / Institute",
-      "year": "2022"
+      "title": "Data Science & Machine Learning Foundations",
+      "provider": "LinkedIn Learning",
+      "focus": [
+        "Data Analysis & Wrangling",
+        "Statistical Analysis",
+        "Supervised & Unsupervised Learning",
+        "Data Visualization & Modeling"
+      ]
+    },
+    {
+      "title": "Mathematics for Data Science & Machine Learning",
+      "provider": "Elliniko Anoikto Panepistimio & Online Programs",
+      "focus": [
+        "Probability Theory",
+        "Statistics",
+        "Linear Algebra",
+        "Calculus for Machine Learning"
+      ]
     }
   ]
 }
-.

@@ -1,9 +1,12 @@
 {% extends "base.html" %}
+
 {% block title %}Education | Charis Kyritsis{% endblock %}
+
 {% block content %}
 <section class="education">
     <h1 class="section-title">Education & Training</h1>
 
+    <!-- Academic Education -->
     <div class="education-section">
         <h2>Academic Education</h2>
 
@@ -11,6 +14,8 @@
         <div class="education-card">
             <h3>{{ edu.title }}</h3>
             <span class="edu-meta">{{ edu.institution }} · {{ edu.period }}</span>
+
+            <p class="edu-description">{{ edu.description }}</p>
 
             <ul>
                 {% for item in edu.focus %}
@@ -21,6 +26,7 @@
         {% endfor %}
     </div>
 
+    <!-- Certifications -->
     <div class="education-section">
         <h2>Certifications & Professional Training</h2>
 
