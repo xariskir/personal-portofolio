@@ -55,6 +55,12 @@ def project_detail(project_id):
         abort(404)
     return render_template("project_detail.html", project=project)
 
+
+@app.route("/resume")
+def resume():
+    return render_template("resume.html")
+
+
 @app.route("/contact")
 def contact():
     return render_template("contact.html")
