@@ -3,25 +3,28 @@
 <head>
 <link rel="canonical" href="https://charis-kyritsis.dev{{ request.path }}">
 
-    <!-- SEO -->
-<title>{% block title %}Charis Kyritsis | Data Analyst & Machine Learning Engineer{% endblock %}</title>
-<meta name="description" content="{% block meta_description %}Personal website of Charis Kyritsis, Data Analyst & Machine Learning Engineer specializing in data-driven and AI-powered solutions.{% endblock %}">
+{% set seo_title = self.title() | default("Charis Kyritsis | Data Analyst & Machine Learning Engineer") %}
+{% set seo_description = self.meta_description() | default(
+    "Personal website of Charis Kyritsis, Data Analyst & Machine Learning Engineer specializing in data-driven and AI-powered solutions."
+) %}
 
+<title>{{ seo_title }}</title>
+<meta name="description" content="{{ seo_description }}">
 
-<!-- Open Graph (LinkedIn, Facebook) -->
 <!-- Open Graph -->
-<meta property="og:title" content="{% block og_title %}Charis Kyritsis | Data Analyst & ML Engineer{% endblock %}">
-<meta property="og:description" content="{% block og_description %}Data-driven and AI-powered solutions, machine learning projects and analytics expertise.{% endblock %}">
+<meta property="og:title" content="{{ seo_title }}">
+<meta property="og:description" content="{{ seo_description }}">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://charis-kyritsis.dev{{ request.path }}">
 <meta property="og:image" content="https://charis-kyritsis.dev/static/images/og-preview.png">
 
 <!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="{% block og_title %}Charis Kyritsis | Data Analyst & ML Engineer{% endblock %}">
-<meta name="twitter:description" content="{% block og_description %}Data-driven and AI-powered solutions, machine learning projects and analytics expertise.{% endblock %}">
+<meta name="twitter:title" content="{{ seo_title }}">
+<meta name="twitter:description" content="{{ seo_description }}">
 <meta name="twitter:image" content="https://charis-kyritsis.dev/static/images/og-preview.png">
 
+<link rel="canonical" href="https://charis-kyritsis.dev{{ request.path }}">
 
 
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
