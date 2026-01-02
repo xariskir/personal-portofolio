@@ -29,43 +29,38 @@
 
     <!-- CSS (ΤΟ ΚΡΙΣΙΜΟ ΣΗΜΕΙΟ ΠΟΥ ΕΛΕΙΠΕ) -->
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/cvio.css') }}">
+
 </head>
 
 
 <body>
 
-    <!-- BACKGROUND -->
-    <div class="bg-layer"></div>
-    <div class="bg-overlay"></div>
-
-    <!-- NAV -->
-    <nav class="top-nav">
-        <a href="/">Home</a>
-        <a href="/about">About</a>
-        <a href="/skills">Skills</a>
-        <a href="/projects">Projects</a>
-        <a href="/education">Education</a>
-        <a href="/resume">Resume</a>
-        <a href="/contact">Contact</a>
-    </nav>
-
-    <!-- CONTENT -->
-    <main class="page-content">
-        {% block content %}{% endblock %}
-    </main>
-
-    <!-- FOOTER -->
-    <footer class="site-footer">
-        <div class="footer-content">
-            <p class="footer-text">© 2026 Charis Kyritsis</p>
-
-            <div class="footer-socials">
-                <a href="https://www.linkedin.com/in/charis-kyritsis" target="_blank">LinkedIn</a>
-                <a href="https://github.com/xariskir" target="_blank">GitHub</a>
-                <a href="mailto:kyritsisxaris@gmail.com">Email</a>
-            </div>
+    <!-- Lines Background -->
+    <div class="lines">
+        <div class="content">
+            <div class="line-col"></div>
+            <div class="line-col"></div>
+            <div class="line-col"></div>
+            <div class="line-col"></div>
+            <div class="line-col"></div>
         </div>
-    </footer>
+    </div>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="logo">
+            <span>Charis Kyritsis</span>
+        </div>
+
+        <a class="menu-btn"><span></span></a>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <div class="wrapper">
+        {% block content %}{% endblock %}
+    </div>
 
 </body>
+
 </html>

@@ -1,0 +1,151 @@
+/* ===========================
+   CVIO LAYOUT BASE
+=========================== */
+
+body {
+    background: #101010;
+    color: #fff;
+    font-family: "Inter", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Vertical Lines Background */
+.lines {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.lines .content {
+    display: grid;
+    height: 100%;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.lines .line-col {
+    border-right: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Header */
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 20px 40px;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo span {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.menu-btn {
+    cursor: pointer;
+    width: 30px;
+    height: 20px;
+    position: relative;
+}
+
+.menu-btn span,
+.menu-btn span:before,
+.menu-btn span:after {
+    background: #fff;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+}
+
+.menu-btn span {
+    top: 50%;
+}
+
+.menu-btn span:before {
+    top: -8px;
+}
+
+.menu-btn span:after {
+    top: 8px;
+}
+
+/* HERO SECTION */
+.section.started {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+.started-content .h-title {
+    font-size: 38px;
+    font-weight: 600;
+}
+
+.started-content .h-title strong {
+    color: #4bffa5;
+}
+
+.typed-subtitle {
+    margin-top: 10px;
+    display: inline-block;
+    font-size: 22px;
+    color: #bbb;
+}
+
+/* Avatar image */
+.logo {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: auto;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 25px;
+}
+
+.btn-main {
+    margin-top: 30px;
+    padding: 12px 30px;
+    border: 2px solid #4bffa5;
+    color: #4bffa5;
+    border-radius: 30px;
+    display: inline-block;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn-main:hover {
+    background: #4bffa5;
+    color: #101010;
+}
+
+.contact-row {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.contact-card {
+    flex: 1;
+    min-width: 250px;
+    background: rgba(255,255,255,0.04);
+    padding: 25px 30px;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.contact-card:hover {
+    border-color: #4bffa5;
+    transform: translateY(-5px);
+}
