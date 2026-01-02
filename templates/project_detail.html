@@ -1,6 +1,7 @@
 {% extends "base.html" %}
+{% block og_title %}{{ project.title }} | Charis Kyritsis{% endblock %}
+{% block og_description %}{{ project.summary }}{% endblock %}
 
-{% block title %}{{ project.title }} | Charis Kyritsis{% endblock %}
 
 {% block content %}
 <section class="project-detail">
