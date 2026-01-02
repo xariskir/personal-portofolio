@@ -173,11 +173,12 @@ body {
 
 /* Hero Buttons */
 .hero-buttons {
-    margin-top: 30px;
     display: flex;
+    gap: 20px;
     justify-content: center;
-    gap: 15px;
+    margin-top: 20px;
 }
+
 
 .btn-alt {
     border-color: #fff;
@@ -228,4 +229,48 @@ body {
 
 .menu-content nav a:hover {
     color: #fff;
+}
+
+
+/* FIXED CENTER NAVIGATION */
+.top-menu {
+    position: fixed;
+    top: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 35px;
+    z-index: 50;
+}
+
+.top-menu a {
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+.top-menu a:hover {
+    color: #4bffa5;
+}
+
+
+.section.started {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+}
+
+.started-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.avatar {
+    margin: 0 auto 20px auto;
 }
