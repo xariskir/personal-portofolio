@@ -274,3 +274,29 @@ body {
 .avatar {
     margin: 0 auto 20px auto;
 }
+
+
+/* Fix page title spacing for all inner pages */
+.inner-page {
+    padding-top: 140px;  /* adjust if needed */
+}
+/* Center align text in About page */
+.about-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+.inner-page {
+    padding-top: 140px;
+}
+
+.about-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.7;
+}
