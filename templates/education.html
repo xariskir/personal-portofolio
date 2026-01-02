@@ -1,31 +1,91 @@
 {% extends "base.html" %}
 
 {% block content %}
-<section class="section">
-
+<section class="education">
     <h1 class="section-title">Education & Certifications</h1>
 
-    <div class="content-box">
+    <!-- Academic Education -->
+    <div class="education-section">
+        <h2>Academic Education</h2>
 
-        <h3>Education</h3>
         {% for edu in education %}
-        <div class="resume-box">
-            <strong>{{ edu.title }}</strong><br>
-            <span>{{ edu.school }}</span><br>
-            <em>{{ edu.period }}</em>
+        <div class="education-card">
+            <h3>{{ edu.title }}</h3>
+            <span class="edu-meta">{{ edu.institution }} · {{ edu.period }}</span>
+
+            <p class="edu-description">{{ edu.description }}</p>
+
+            <ul>
+                {% for item in edu.focus %}
+                <li>{{ item }}</li>
+                {% endfor %}
+            </ul>
         </div>
         {% endfor %}
-
-        <h3>Certifications</h3>
-        {% for cert in certifications %}
-        <div class="resume-box">
-            <strong>{{ cert.title }}</strong><br>
-            <span>{{ cert.provider }}</span><br>
-            <em>{{ cert.year }}</em>
-        </div>
-        {% endfor %}
-
     </div>
 
+    <!-- Certifications -->
+    <div class="education-section">
+        <h2>Certifications & Professional Training</h2>
+
+        <!-- Data Science -->
+        <div class="education-subsection">
+            <h3>Data Science & Analytics</h3>
+            {% for cert in certifications.data_science %}
+            <p class="cert-item">
+                <strong>{{ cert.title }}</strong> — {{ cert.provider }}
+                {% if cert.issued %} · Issued {{ cert.issued }}{% endif %}
+                {% if cert.expires %} · Expires {{ cert.expires }}{% endif %}
+                {% if cert.note %} ({{ cert.note }}){% endif %}
+            </p>
+            {% endfor %}
+        </div>
+
+        <!-- ML & Math -->
+        <div class="education-subsection">
+            <h3>Machine Learning & Mathematical Foundations</h3>
+            {% for cert in certifications.machine_learning_math %}
+            <p class="cert-item">
+                <strong>{{ cert.title }}</strong> — {{ cert.provider }}
+                {% if cert.issued %} · Issued {{ cert.issued }}{% endif %}
+            </p>
+            {% endfor %}
+        </div>
+
+        <!-- AI -->
+        <div class="education-subsection">
+            <h3>Artificial Intelligence & Generative AI</h3>
+            {% for cert in certifications.ai_generative_ai %}
+            <p class="cert-item">
+                <strong>{{ cert.title }}</strong> — {{ cert.provider }}
+                {% if cert.issued %} · Issued {{ cert.issued }}{% endif %}
+            </p>
+            {% endfor %}
+        </div>
+
+        <!-- Business -->
+        <div class="education-subsection">
+            <h3>Business, ERP & Digital Operations</h3>
+            {% for cert in certifications.business %}
+            <p class="cert-item">
+                <strong>{{ cert.title }}</strong> — {{ cert.provider }}
+                {% if cert.issued %} · Issued {{ cert.issued }}{% endif %}
+            </p>
+
+            {% if cert.focus %}
+            <ul>
+                {% for item in cert.focus %}
+                <li>{{ item }}</li>
+                {% endfor %}
+            </ul>
+            {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+
+    <p class="edu-note">
+        A full list of credentials is available on my
+        <a href="https://www.linkedin.com/in/charis-kyritsis" target="_blank">LinkedIn profile</a>.
+    </p>
 </section>
 {% endblock %}

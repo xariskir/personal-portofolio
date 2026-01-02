@@ -1,17 +1,39 @@
 {% extends "base.html" %}
 
 {% block content %}
-<section class="section">
-
+<section class="resume">
     <h1 class="section-title">Resume</h1>
 
-    <div class="content-box" style="text-align:center;">
-        <p>You can download my detailed resume (PDF) below:</p>
+    <p class="resume-intro">
+        Download my resume for a concise overview of my professional background,
+        education, and technical expertise in data analytics, machine learning,
+        and AI-driven solutions.
+    </p>
 
-        <a href="/static/files/Charis_Kyritsis_CV.pdf" target="_blank" class="btn-main">
-            Download Resume
-        </a>
-    </div>
+    <div class="resume-actions">
+    <a
+        href="/static/files/Charis_Kyritsis_CV.pdf"
+        class="btn btn-primary"
+        target="_blank"
+    >
+        View Resume (PDF)
+    </a>
 
+    <a
+        href="/static/files/Charis_Kyritsis_CV.pdf"
+        class="btn btn-secondary"
+        download
+    >
+        Download Resume
+    </a>
+</div>
+
+
+    <p class="resume-note">
+        Prefer LinkedIn?
+        <a href="https://www.linkedin.com/in/charis-kyritsis" target="_blank">
+            View my profile
+        </a>.
+    </p>
 </section>
 {% endblock %}

@@ -1,17 +1,65 @@
 {% extends "base.html" %}
 
 {% block content %}
-<section class="section">
-    
-    <h1 class="section-title">Skills</h1>
+<section class="skills">
+    <h1 class="section-title">Skills & Expertise</h1>
 
-    <div class="content-box">
-        <div class="skills-grid">
-            {% for skill in skills %}
-            <div class="skill-item">{{ skill }}</div>
-            {% endfor %}
+    <div class="skills-grid">
+
+        <div class="skill-card">
+            <h3>Data Science & Machine Learning</h3>
+            <ul>
+                <li>Data Analysis & Data Wrangling</li>
+                <li>Supervised & Unsupervised Learning</li>
+                <li>Machine Learning & Data Mining</li>
+                <li>Statistical Analysis & Predictive Modeling</li>
+                <li>Big Data Analytics</li>
+            </ul>
         </div>
-    </div>
 
+        <div class="skill-card">
+            <h3>Mathematics & Statistics</h3>
+            <ul>
+                <li>Probability Theory & Statistics</li>
+                <li>Linear Algebra & Calculus for ML</li>
+                <li>Statistical Modeling</li>
+                <li>Mathematical Foundations for Data Science</li>
+            </ul>
+        </div>
+
+        <div class="skill-card">
+            <h3>Programming & Data Tools</h3>
+            <ul>
+                <li>Python (Data Analysis & Machine Learning)</li>
+                <li>R (Data Wrangling, Visualization & Modeling)</li>
+                <li>Data Visualization</li>
+                <li>Data Modeling</li>
+                <li>SageMath</li>
+            </ul>
+        </div>
+
+        <div class="skill-card">
+            <h3>Cloud, AI & Automation</h3>
+            <ul>
+                <li>Microsoft Azure Machine Learning</li>
+                <li>Azure Cognitive Services</li>
+                <li>Azure Bot Services</li>
+                <li>Artificial Intelligence & Generative AI</li>
+                <li>Prompt Engineering & AI Prompting</li>
+            </ul>
+        </div>
+
+        <div class="skill-card">
+            <h3>Business, ERP & Professional Skills</h3>
+            <ul>
+                <li>Business Intelligence</li>
+                <li>ERP Systems & Business Operations</li>
+                <li>Industrial Automation</li>
+                <li>Problem Solving & Analytical Thinking</li>
+                <li>Communication & Stakeholder Support</li>
+            </ul>
+        </div>
+
+    </div>
 </section>
 {% endblock %}

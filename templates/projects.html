@@ -1,16 +1,16 @@
 {% extends "base.html" %}
 
 {% block content %}
-<section class="section">
-
+<section class="projects">
     <h1 class="section-title">Projects</h1>
 
     <div class="projects-grid">
         {% for project in projects %}
         <a href="/projects/{{ project.id }}" class="project-card">
+            <span class="project-category">{{ project.category }}</span>
             <h3>{{ project.title }}</h3>
             <p>{{ project.summary }}</p>
-            
+
             <div class="project-stack">
                 {% for tech in project.stack %}
                 <span>{{ tech }}</span>
@@ -19,6 +19,5 @@
         </a>
         {% endfor %}
     </div>
-
 </section>
 {% endblock %}
