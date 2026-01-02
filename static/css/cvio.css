@@ -276,11 +276,20 @@ body {
 }
 
 
-/* Fix page title spacing for all inner pages */
+/* =============================
+   FIX INNER PAGE SPACING
+============================= */
 .inner-page {
-    padding-top: 140px;  /* adjust if needed */
+    padding-top: 180px; /* increased from 140 */
 }
-/* Center align text in About page */
+
+.inner-page h1 {
+    margin-bottom: 25px;
+    font-size: 32px;
+    font-weight: 600;
+}
+
+/* ABOUT PAGE CENTER TEXT */
 .about-content {
     max-width: 800px;
     margin: 0 auto;
@@ -289,14 +298,7 @@ body {
     line-height: 1.7;
 }
 
-.inner-page {
-    padding-top: 140px;
-}
-
-.about-content {
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: center;
-    font-size: 18px;
-    line-height: 1.7;
+/* CONTACT PAGE SPACING */
+.contact-row {
+    margin-top: 30px;
 }
