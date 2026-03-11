@@ -1,0 +1,49 @@
+
+[
+  {
+    "id": "ai-invoice-fraud",
+    "title": "AI-Powered Invoice Fraud Detector",
+    "category": "In Progress",
+    "stack": ["Python", "Pandas", "Scikit-learn", "Flask"],
+    "summary": "Machine learning system that detects suspicious invoice patterns for accounting firms.",
+    "problem": "Accounting firms handle large volumes of invoices, making manual fraud detection slow, error-prone, and costly.",
+    "solution": "Designed a supervised machine learning pipeline that analyzes invoice features and flags potentially fraudulent cases with explainable outputs.",
+    "highlights": [
+      "Feature engineering on financial data",
+      "Binary classification models",
+      "Explainable predictions for auditors"
+    ],
+    "impact": [
+      "Reduced manual review workload",
+      "Faster identification of suspicious invoices",
+      "Improved decision support for accountants"
+    ],
+    "github": "https://github.com/xariskir",
+    "status": "Flagship Project"
+  },
+  {
+  "id": "basketball-analysis",
+  "title": "AI Basketball Analytics Platform",
+  "category": "In Progress",
+  "stack": ["Python", "YOLOv8", "ByteTrack", "OpenCV", "Pandas", "Machine Learning"],
+  "summary": "AI-powered sports analytics system that processes full-game basketball videos to extract player tracking, events, and advanced performance insights.",
+  "problem": "Coaches and analysts lack automated tools that convert raw game footage into structured performance metrics, player tracking data, and actionable insights.",
+  "solution": "Built a computer vision pipeline using YOLOv8 and ByteTrack to detect players, track movement, analyze possessions, and generate analytics such as heatmaps, pass networks, shot charts, and lineup efficiencies.",
+  "highlights": [
+    "Real-time player and ball tracking",
+    "Automatic possession and event segmentation",
+    "Shot charts, heatmaps, and spatial analytics",
+    "Lineup performance evaluation and synergy metrics",
+    "PDF report generator with radar charts and lineup summaries"
+  ],
+  "impact": [
+    "Transforms raw video into structured analytics",
+    "Provides coaches with advanced insights similar to EuroLeague-level tools",
+    "Supports tactical decisions, player development, and scouting"
+  ],
+  "github": "https://github.com/xariskir",
+  "status": "Flagship Project"
+}
+
+
+]

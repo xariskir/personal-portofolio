@@ -1,0 +1,434 @@
+﻿diff --git a/.idea/misc.xml b/.idea/misc.xml
+index 1d3ce46..381f5ce 100644
+--- a/.idea/misc.xml
++++ b/.idea/misc.xml
+@@ -3,5 +3,5 @@
+   <component name="Black">
+     <option name="sdkName" value="Python 3.13" />
+   </component>
+-  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.13" project-jdk-type="Python SDK" />
++  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.14 (.venv)" project-jdk-type="Python SDK" />
+ </project>
+\ No newline at end of file
+diff --git a/.idea/personal_site.iml b/.idea/personal_site.iml
+index d8b3f6c..0e1471c 100644
+--- a/.idea/personal_site.iml
++++ b/.idea/personal_site.iml
+@@ -2,7 +2,7 @@
+ <module type="PYTHON_MODULE" version="4">
+   <component name="NewModuleRootManager">
+     <content url="file://$MODULE_DIR$" />
+-    <orderEntry type="jdk" jdkName="Python 3.13" jdkType="Python SDK" />
++    <orderEntry type="jdk" jdkName="Python 3.14 (.venv)" jdkType="Python SDK" />
+     <orderEntry type="sourceFolder" forTests="false" />
+   </component>
+ </module>
+\ No newline at end of file
+diff --git a/static/css/style.css b/static/css/style.css
+index 302bb2f..4ee03ee 100644
+--- a/static/css/style.css
++++ b/static/css/style.css
+@@ -1576,3 +1576,91 @@ body {
+ .contact-card p a:hover {
+     opacity: 1;
+ }
++
++.site-footer {
++    text-align: center;
++    padding: 20px 0;
++    margin-top: 50px;
++    font-size: 0.9rem;
++    color: #b8c7ff;
++    opacity: 0.8;
++}
++
++.site-footer strong {
++    color: #6ee7ff;
++}
++
++.site-footer:hover {
++    opacity: 1;
++    transition: 0.25s ease;
++}
++
++.edu-cert-icon {
++    width: 36px;
++    height: 36px;
++    margin: 8px 0 12px 0;
++    opacity: 0.9;
++    filter: drop-shadow(0 0 4px #22eefe);
++}
++
++.edu-icon {
++    width: 42px;
++    height: 42px;
++    margin: 8px 0 15px 0;
++    filter: drop-shadow(0 0 6px #22eefe);
++    opacity: 0.9;
++}
++
++.cert-icon-small {
++    width: 26px;
++    height: 26px;
++    margin-right: 10px;
++    filter: drop-shadow(0 0 4px #22eefe);
++    opacity: 0.9;
++}
++
++.cert-entry {
++    display: flex;
++    align-items: center;
++    margin-bottom: 6px;
++}
++
++.cert-title {
++    font-weight: 600;
++}
++
++.cert-provider,
++.cert-year {
++    opacity: 0.7;
++}
++
++
++.edu-icons {
++    display: flex;
++    gap: 10px;
++    margin: 10px 0 15px 0;
++}
++
++.edu-icon {
++    width: 38px;
++    height: 38px;
++    opacity: 0.9;
++    filter: drop-shadow(0 0 6px #22eefe);
++}
++
++.edu-title-row {
++    display: flex;
++    justify-content: space-between;
++    align-items: center;
++}
++
++.edu-title-row h3 {
++    margin: 0;
++}
++
++.edu-icon {
++    width: 38px;
++    height: 38px;
++    opacity: 0.9;
++    filter: drop-shadow(0 0 6px #22eefe);
++}
+diff --git a/static/files/Charis_Kyritsis_CV.pdf b/static/files/Charis_Kyritsis_CV.pdf
+index d03411a..a9bcfa1 100644
+--- a/static/files/Charis_Kyritsis_CV.pdf
++++ b/static/files/Charis_Kyritsis_CV.pdf
+@@ -1 +1,163 @@
+-
++                Charis Kyritsis
++
++Karditsa, Greece | +30 698 845 9712 | kiritsisxaris@gmail.com | www.linkedin.com/in/charis-kyritsis
++
++Data Science and Machine Learning postgraduate with strong experience in ERP systems, data pipelines, and Python-
++based automation. Skilled in developing AI-driven solutions that streamline business processes and improve
++operational decision-making. Experienced in transforming operational data into actionable insights through
++automation, analytics, and system integration. Passionate about building scalable AI and machine learning solutions
++that enhance business efficiency and data-driven operations.
++
++EDUCATION
++
++Hellenic Open Univeristy                                                                 2023 έΑΥ Present
++MasterέΑβs Degree, Data Science and Machine Learning
++
++Technological Educational Institute of Epirus                                            2002 έΑΥ 2006
++BachelorέΑβs Degree, Department of Computer Engineering
++
++EXPERIENCE
++
++Mpakratsas Apostolos LTD                                                                 2023 - Present
++
++AI Automations | Business Intelligence Analyst | IT Support | ERP & Business Operations
++
++ΎΓ╖ Developed AI-powered automation solutions that reduce manual workload and streamline business processes.
++
++ΎΓ╖ Developed Python-based automation scripts to analyze ERP data and improve operational decision-making.
++
++ΎΓ╖ Maintained internal IT infrastructure and resolved system issues, ensuring smooth operation for internal users
++
++ΎΓ╖ Managed ERP financial data pipelines including invoice processing,purchase order tracking and reporting workflows.
++
++ΎΓ╖ Maintained and optimized ERP system workflows across accounting and production departments, ensuring operational
++    continuity.
++
++Computer Center                                                                             2010 - 2023
++
++IT Support | ERP & Business Operations
++
++ΎΓ╖ Supported ERP system operations for retail ensuring system reliability and resolving operational issues.
++
++ΎΓ╖ Diagnosed and repaired hardware and software issues for customers across various platforms
++
++ΎΓ╖ Delivered on-site and remote technical support for individual clients and business environments, processing and
++
++analyzing system logs to identify trends and recurring issues
++
++ΎΓ╖ Provided specialized IT support for Intracom systems and OPAP retail stores, banking institutions (Piraeus Bank,
++
++Alpha Bank), and major supermarket chains including Galaxias, Lidl, and Carrefour
++
++ΎΓ╖ Built and maintained long-term client relationships through responsive, reliable service
++
++Public Educational Institution of karditsa                                                  2008 - 2010
++Lecturer in Informatics
++
++    ΎΓ╖ Instructed students in basic and advanced computer skills
++    ΎΓ╖ Developed course materials and assessments for IT modules
++
++LANGUAGES
++English: First Certificate in English (University of Michigan)
++PROJECTS
++    E-commerce Business Intelligence Dashboard (GCP)
++
++    Developed an end-to-end cloud Business Intelligence workflow to analyze and visualize e-commerce transaction data using
++    Google Cloud Platform.
++
++         ΎΓ╖ Designed a scalable analytics pipeline using BigQuery for data storage and SQL-based data modeling
++         ΎΓ╖ Implemented data transformation queries to generate sales, revenue, and customer performance metrics
++         ΎΓ╖ Built an interactive dashboard in Looker Studio for real-time business insights and KPI monitoring
++         ΎΓ╖ Structured datasets to simulate real-world BI reporting scenarios used in enterprise analytics environments
++
++    Tech: Python, SQL, Google Cloud Platform, BigQuery, Looker Studio
++    GitHub: https://github.com/xariskir/gcp-ecommerce-bi-dashboard
++
++    AI-Powered Invoice Fraud Detection System (Vertex AI)
++
++    Developed a cloud-based machine learning pipeline for automated invoice fraud detection using Google Cloud Platform,
++    simulating real-world financial risk analysis systems used in enterprise environments.
++
++         ΎΓ╖ Built a custom XGBoost training pipeline on Google Vertex AI for fraud detection modeling
++         ΎΓ╖ Implemented scalable online inference endpoints for real-time prediction using Vertex AI
++         ΎΓ╖ Developed a REST API service via Cloud Run to integrate predictions into external applications
++         ΎΓ╖ Logged model predictions and operational data into BigQuery for monitoring and analytics
++         ΎΓ╖ Created a fraud monitoring dashboard in Looker Studio for real-time anomaly tracking and reporting
++
++    Tech: Python, XGBoost, Google Vertex AI, Google Cloud Platform, BigQuery, Cloud Run, Looker Studio
++    GitHub: https://github.com/xariskir/ai-invoice-fraud-detection-vertex-ai
++
++    Automated Invoice-to-Loading Form Processing System έΑΥ In Progress
++
++    Developed a Python-based document processing system that converts delivery invoices into standardized logistics loading
++    forms.
++
++         ΎΓ╖ Implemented PDF and CSV data extraction pipelines using pdfplumber and pandas
++         ΎΓ╖ Built business logic rules to process shipment data and assign storage constraints
++         ΎΓ╖ Automated Excel template population using openpyxl
++         ΎΓ╖ Generated final PDF transport forms via LibreOffice integration
++         ΎΓ╖ Developed an interactive Streamlit dashboard for data validation and document generation
++
++    Tech: Python, Streamlit, pandas, pdfplumber, PyPDF2, openpyxl, LibreOffice
++
++    Basketball Analytics Platform (Python, End-to-End Game Analysis System) έΑΥ In Progress
++    Developed a full-stack basketball analytics platform featuring a custom event-logging GUI (Tkinter) and an
++    advanced analytics engine for team and player performance evaluation. Implemented advanced metrics including
++    Offensive/Defensive Rating, Net Rating, PER, Usage Rate, Win Probability, Plus-Minus Timeline, and Four Factors
++    analysis. Built automated multi-page professional PDF match reports with dynamic visualizations using Matplotlib,
++    Seaborn, Pandas, and ReportLab.
++
++    Tech : Python, Pandas, NumPy, Matplotlib, Seaborn, Tkinter, ReportLab, CSV/JSON-based data
++CERIFICATIONS
++         ΎΓ╖ Complete Python Developer in 2023: Zero to Mastery - Udemy (2022)
++         ΎΓ╖ Math for Data science,Data analysis and Machine Learning Udemy (2023)
++         ΎΓ╖ Carrer Essentials In Generative AI - Microsoft and Linkedin (2024)
++         ΎΓ╖ Microsoft Certified: Azure AI Fundamentals - Microsoft (2024)
++         ΎΓ╖ Data Analytics with SQL & Python - Workearly (2025)
++         ΎΓ╖ Foundational Math for Machine Learning έΑΥ Linkedin (2025)
++         ΎΓ╖ Machine Learning Foundations: Linear Algebra έΑΥ Linkedin (2025)
++         ΎΓ╖ Machine Learning Foundations: Calculus έΑΥ Linkedin (2025)
++         ΎΓ╖ Machine Learning Foundations: Probability έΑΥ Linkedin (2025)
++         ΎΓ╖ Statistics Foundations 1: The Basics έΑΥ Linkedin (2025)
++         ΎΓ╖ Prompting ChatGPT with Multimodal Techniques έΑΥ Linkedin (2025)
++         ΎΓ╖ Introduction to Prompt Engineering for Generative AI έΑΥ Linkedin (2025)
++         ΎΓ╖ Prompt Engineering with ChatGPT -Linkedin (2025)
++         ΎΓ╖ R for Data Science: Analysis and Visualization -Linkedin (2025)
++         ΎΓ╖ R for Data Science: Analysis and Visualization -Linkedin (2025)
++         ΎΓ╖ Complete Guide to R: Wrangling, Visualizing, and Modeling Data -Linkedin (2025)
++         ΎΓ╖ Data Science Foundations:Fundamentals -Linkedin (2025)
++         ΎΓ╖ Learning Data Science: Understanding the Basics -Linkedin (2025)
++         ΎΓ╖ Data Visualization with Tableau & Microsoft Power BI έΑΥ Workearly (2026)
++
++TECHNICAL SKILLS
++
++    Programming
++    Python, R
++
++    Data & Analytics
++    Pandas, NumPy, Data Processing, Data Visualization
++
++    Cloud Platforms
++    Google Cloud Platform (BigQuery, Vertex AI, Cloud Run)
++
++    Business Intelligence
++    Looker Studio, Data Dashboards, Power BI
++
++    Tools & Environment
++    Git, PyCharm, RStudio, Jupyter Notebook, Visual Studio Code
++
++    Enterprise Systems
++    ERP Workflows, Business Process Automation, Financial Systems
++
++LEADERSHIP & ACTIVITIES
++
++    Football Referee
++
++         ΎΓ╖ Officiated competitive football matches for 14 years at the national and local level leagues, making real-time decisions
++              in high-pressure environments.
++
++         ΎΓ╖ Managed communication and conflict resolution between players and coaching staff while maintaining rule
++              enforcement and game integrity.
++
++         ΎΓ╖ Developed strong situational awareness, teamwork coordination, and decision-making under pressure.
++
+diff --git a/static/icons~3899147f991a7f4b6bfa0243ce9b22cf12c10df7 b/static/icons~3899147f991a7f4b6bfa0243ce9b22cf12c10df7
+deleted file mode 100644
+index 8b13789..0000000
+--- a/static/icons~3899147f991a7f4b6bfa0243ce9b22cf12c10df7
++++ /dev/null
+@@ -1 +0,0 @@
+-
+diff --git a/templates/base.html b/templates/base.html
+index 55bc931..b5d522f 100644
+--- a/templates/base.html
++++ b/templates/base.html
+@@ -62,6 +62,9 @@
+     <div class="wrapper">
+         {% block content %}{% endblock %}
+     </div>
++<footer class="site-footer">
++    <p>Generated by <strong>Charis Kyritsis</strong> ┬σ 2026</p>
++</footer>
+ 
+ </body>
+ </html>
+diff --git a/templates/education.html b/templates/education.html
+index 25fb12a..c91991a 100644
+--- a/templates/education.html
++++ b/templates/education.html
+@@ -11,11 +11,16 @@
+     <div class="edu-container">
+         <h2>Academic Education</h2>
+ 
+-        <!-- GRID FOR ACADEMIC ITEMS -->
+         <div class="academic-grid slide-in-up">
+             {% for edu in education %}
+             <div class="education-card">
+-                <h3>{{ edu.title }}</h3>
++
++                <!-- TITLE + ICON RIGHT -->
++                <div class="edu-title-row">
++                    <h3>{{ edu.title }}</h3>
++                    <img src="/static/icons/education/degree.svg" class="edu-icon">
++                </div>
++
+                 <span class="edu-meta">{{ edu.institution }} ┬╖ {{ edu.period }}</span>
+ 
+                 <p class="edu-description">{{ edu.description }}</p>
+@@ -25,6 +30,7 @@
+                     <li>{{ item }}</li>
+                     {% endfor %}
+                 </ul>
++
+             </div>
+             {% endfor %}
+         </div>
+@@ -41,20 +47,30 @@
+ 
+             <!-- DATA SCIENCE -->
+             <div class="cert-card">
+-                <h3>Data Science & Analytics</h3>
++
++                <div class="edu-title-row">
++                    <h3>Data Science & Analytics</h3>
++                    <img src="/static/icons/education/datascience.svg" class="edu-icon">
++                </div>
++
+                 {% for cert in certifications.data_science %}
+                 <p class="cert-item">
+                     <strong>{{ cert.title }}</strong> έΑΦ {{ cert.provider }}
+                     {% if cert.issued %} ┬╖ Issued {{ cert.issued }}{% endif %}
+                     {% if cert.expires %} ┬╖ Expires {{ cert.expires }}{% endif %}
+-                    {% if cert.note %} ({{ cert.note }}){% endif %}
+                 </p>
+                 {% endfor %}
+             </div>
+ 
+-            <!-- MACHINE LEARNING / MATH -->
++
++            <!-- ML & MATH -->
+             <div class="cert-card">
+-                <h3>Machine Learning & Mathematical Foundations</h3>
++
++                <div class="edu-title-row">
++                    <h3>Machine Learning & Mathematical Foundations</h3>
++                    <img src="/static/icons/education/math.svg" class="edu-icon">
++                </div>
++
+                 {% for cert in certifications.machine_learning_math %}
+                 <p class="cert-item">
+                     <strong>{{ cert.title }}</strong> έΑΦ {{ cert.provider }}
+@@ -63,9 +79,15 @@
+                 {% endfor %}
+             </div>
+ 
+-            <!-- ARTIFICIAL INTELLIGENCE -->
++
++            <!-- AI / GENERATIVE AI -->
+             <div class="cert-card">
+-                <h3>Artificial Intelligence & Generative AI</h3>
++
++                <div class="edu-title-row">
++                    <h3>Artificial Intelligence & Generative AI</h3>
++                    <img src="/static/icons/education/ai.svg" class="edu-icon">
++                </div>
++
+                 {% for cert in certifications.ai_generative_ai %}
+                 <p class="cert-item">
+                     <strong>{{ cert.title }}</strong> έΑΦ {{ cert.provider }}
+@@ -74,9 +96,14 @@
+                 {% endfor %}
+             </div>
+ 
++
+             <!-- BUSINESS / ERP -->
+             <div class="cert-card">
+-                <h3>Business, ERP & Digital Operations</h3>
++
++                <div class="edu-title-row">
++                    <h3>Business, ERP & Digital Operations</h3>
++                    <img src="/static/icons/education/business.svg" class="edu-icon">
++                </div>
+ 
+                 {% for cert in certifications.business %}
+                 <p class="cert-item">
+diff --git a/templates/projects.html b/templates/projects.html
+index fa69532..306a8eb 100644
+--- a/templates/projects.html
++++ b/templates/projects.html
+@@ -14,7 +14,7 @@
+         <div class="project-card slide-in-up">
+ 
+             <div class="project-card-title-block">
+-                <h3>AI-Powered Invoice Fraud Detector</h3>
++                <h3>In Progress - AI-Powered Invoice Fraud Detector</h3>
+ 
+                 <div class="project-icons">
+                     <img src="/static/icons/python.svg" alt="Python">
+@@ -41,7 +41,7 @@
+         <div class="project-card slide-in-up">
+ 
+             <div class="project-card-title-block">
+-                <h3>AI Basketball Analytics Platform</h3>
++                <h3>In Progress - AI Basketball Analytics Platform</h3>
+ 
+                 <div class="project-icons">
+                     <img src="/static/icons/python.svg" alt="Python">
